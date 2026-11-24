@@ -1,0 +1,15 @@
+services:
+  brandlens:
+    build: .
+    env_file: .env
+    environment:
+      HOST: 0.0.0.0
+      DB_PATH: /data/brandlens.db
+    ports:
+      - "4321:4321"
+    volumes:
+      - brandlens-data:/data
+    restart: unless-stopped
+
+volumes:
+  brandlens-data:

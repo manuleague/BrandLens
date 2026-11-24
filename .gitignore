@@ -1,0 +1,8 @@
+node_modules/
+data/
+.env
+*.db
+*.db-*
+
+# Added by ggshield
+.cache_ggshield
